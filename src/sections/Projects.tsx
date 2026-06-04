@@ -7,33 +7,45 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "Project Zero",
+      title: "SITE INTERNET",
       description: t('proj_0_desc'),
-      tags: ["Python", "Cryptography", "CLI"],
-      github: "#",
+      tags: ["HTML", "CSS", "JAVASCRIPT"],
     },
     {
-      title: "Cyber_Scan",
+      title: "BASE DE DONNÉES",
       description: t('proj_1_desc'),
-      tags: ["C", "Networking", "Security"],
-      github: "#",
+      tags: ["SQL", "R"],
     },
     {
-      title: "Hacker_Portfolio",
+      title: "CHATBOT JAVA",
       description: t('proj_2_desc'),
-      tags: ["React", "Framer Motion", "Vite"],
-      github: "#",
-      demo: "#",
+      tags: ["JAVA"],
+    },
+    {
+      title: "DEV APPICATION",
+      description: t('proj_3_desc'),
+      tags: ["JAVAFX"],
+    },
+    {
+      title: "INSTALLATION MACHINE VIRTUELLE",
+      description: t('proj_4_desc'),
+      tags: ["SHELL"],
+    },
+    {
+      title: "INSTALLATION MACHINE VIRTUELLE",
+      description: t('proj_5_desc'),
+      tags: ["SHELL"],
     }
   ];
 
   return (
     <section id="projects" className="container">
       <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_projects')}</h2>
+
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: '2rem',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+        gap: '2.5rem',
         width: '100%'
       }}>
         {projects.map((project, index) => (

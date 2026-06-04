@@ -11,12 +11,11 @@ const About: React.FC = () => {
     "cat skills.txt",
     t('about_languages'),
     t('about_tools'),
+    "cat interests.txt",
     t('about_interests'),
-    "ls missions/",
-    t('about_mission_1'),
-    t('about_mission_2'),
-    t('about_mission_3'),
-    `echo '${t('about_ready')}'`
+    t('about_interests_2'),
+    "ls personal/",
+    t('about_me')
   ];
 
   return (
