@@ -38,15 +38,16 @@ const Projects: React.FC = () => {
     }
   ];
 
-  <section id="projects" className="container">
-    <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_projects')}</h2>
+  return (
+    <section id="projects" className="container">
+      <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_projects')}</h2>
 
-    <div style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-      gap: '2.5rem',
-      width: '100%'
-    }}>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+        gap: '2.5rem',
+        width: '100%'
+      }}>
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
