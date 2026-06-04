@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './styles/globals.css';
 import './styles/animations.css';
 import BackgroundMatrix from './components/BackgroundMatrix';

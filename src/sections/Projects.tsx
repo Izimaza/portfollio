@@ -38,7 +38,8 @@ const Projects: React.FC = () => {
     }
   ];
 
-  <section id="projects" className="container">
+  return (
+    <section id="projects" className="container">
     <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_projects')}</h2>
 
     <div style={{ 
