@@ -7,21 +7,18 @@ const Journey: React.FC = () => {
 
   const steps = [
     {
-      year: "2023 - Present",
+      year: "2026",
       title: t('journey_1_title'),
-      location: "BUT INFO, France",
       description: t('journey_1_desc')
     },
     {
-      year: "2023",
+      year: "2025",
       title: t('journey_2_title'),
-      location: "Sciences Option",
       description: t('journey_2_desc')
     },
     {
       year: "2022",
       title: t('journey_3_title'),
-      location: "Self-taught",
       description: t('journey_3_desc')
     }
   ];
@@ -34,7 +31,7 @@ const Journey: React.FC = () => {
         {/* The "Git Branch" line */}
         <div style={{
           position: 'absolute',
-          left: '20px',
+          left: 'clamp(15px, 4vw, 20px)',
           top: 0,
           bottom: 0,
           width: '2px',
@@ -49,7 +46,7 @@ const Journey: React.FC = () => {
             transition={{ delay: index * 0.2 }}
             viewport={{ once: true }}
             style={{
-              paddingLeft: '60px',
+              paddingLeft: 'clamp(40px, 10vw, 60px)',
               marginBottom: '3rem',
               position: 'relative',
             }}
@@ -57,10 +54,10 @@ const Journey: React.FC = () => {
             {/* The "Commit" node */}
             <div style={{
               position: 'absolute',
-              left: '11px',
+              left: 'clamp(6px, 2vw, 11px)',
               top: '5px',
-              width: '20px',
-              height: '20px',
+              width: 'clamp(16px, 3vw, 20px)',
+              height: 'clamp(16px, 3vw, 20px)',
               borderRadius: '50%',
               backgroundColor: 'var(--bg-color)',
               border: '2px solid var(--primary-color)',
@@ -71,9 +68,8 @@ const Journey: React.FC = () => {
             <span style={{ color: 'var(--primary-color)', fontSize: '0.8rem', fontWeight: 'bold' }}>
               {step.year}
             </span>
-            <h3 style={{ margin: '0.5rem 0', fontSize: '1.2rem' }}>{step.title}</h3>
-            <p style={{ color: '#888', fontStyle: 'italic', marginBottom: '0.5rem' }}>{step.location}</p>
-            <p style={{ color: '#aaa' }}>{step.description}</p>
+            <h3 style={{ margin: '0.5rem 0', fontSize: 'clamp(1rem, 4vw, 1.2rem)' }}>{step.title}</h3>
+            <p style={{ color: '#aaa', fontSize: 'clamp(0.85rem, 3vw, 1rem)' }}>{step.description}</p>
           </motion.div>
         ))}
       </div>
