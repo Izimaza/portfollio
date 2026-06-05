@@ -3,25 +3,25 @@ import Terminal from '../components/Terminal';
 import { useLanguage } from '../context/LanguageContext';
 
 const About: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const bioLines = [
-    "whoami",
+    t('term_whoami'),
     t('about_whoami'),
-    "cat skills.txt",
+    t('term_skills'),
     t('about_languages'),
     t('about_tools'),
-    "cat interests.txt",
+    t('term_interests'),
     t('about_interests'),
     t('about_interests_2'),
-    "ls personal/",
+    t('term_personal'),
     t('about_me')
   ];
 
   return (
     <section id="about" className="container">
       <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_about')}</h2>
-      <Terminal lines={bioLines} />
+      <Terminal lines={bioLines} key={language} />
     </section>
   );
 };

@@ -35,13 +35,14 @@ const Hero: React.FC = () => {
           style={{ 
             position: 'relative', 
             display: 'inline-block', 
-            padding: isRevealed ? '2rem 3rem' : '1.5rem 4rem', 
+            padding: isRevealed ? 'clamp(1rem, 5vw, 2rem) clamp(1.5rem, 8vw, 3rem)' : 'clamp(1rem, 4vw, 1.5rem) clamp(2rem, 10vw, 4rem)', 
             marginBottom: '1rem', 
             overflow: 'hidden',
             cursor: isRevealed ? 'default' : 'pointer',
             transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
             backgroundColor: isRevealed ? 'transparent' : 'rgba(0, 255, 65, 0.05)',
-            border: isRevealed ? 'none' : '1px dashed var(--primary-color)'
+            border: isRevealed ? 'none' : '1px dashed var(--primary-color)',
+            maxWidth: '100%'
           }} 
         >
           <AnimatePresence mode="wait">
@@ -54,11 +55,13 @@ const Hero: React.FC = () => {
                 style={{ 
                   fontFamily: 'monospace', 
                   color: 'var(--primary-color)', 
-                  letterSpacing: '5px',
+                  letterSpacing: 'clamp(2px, 1vw, 5px)',
                   fontWeight: 'bold',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '15px'
+                  gap: 'clamp(8px, 2vw, 15px)',
+                  fontSize: 'clamp(0.7rem, 2.5vw, 0.9rem)',
+                  textAlign: 'center'
                 }}
               >
                 <motion.span

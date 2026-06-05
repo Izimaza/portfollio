@@ -7,34 +7,40 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "SITE INTERNET",
+      title: t('proj_title_0'),
       description: t('proj_0_desc'),
       tags: ["HTML", "CSS", "JAVASCRIPT"],
+      longDescription: t('proj_0_long')
     },
     {
-      title: "BASE DE DONNÉES",
+      title: t('proj_title_1'),
       description: t('proj_1_desc'),
       tags: ["SQL", "R"],
+      longDescription: t('proj_1_long')
     },
     {
-      title: "CHATBOT JAVA",
+      title: t('proj_title_2'),
       description: t('proj_2_desc'),
       tags: ["JAVA"],
+      longDescription: t('proj_2_long')
     },
     {
-      title: "DEV APPICATION",
+      title: t('proj_title_3'),
       description: t('proj_3_desc'),
       tags: ["JAVAFX"],
+      longDescription: t('proj_3_long')
     },
     {
-      title: "INSTALLATION MACHINE VIRTUELLE",
+      title: t('proj_title_4'),
       description: t('proj_4_desc'),
-      tags: ["SHELL"],
+      tags: ["BASH"],
+      longDescription: t('proj_4_long')
     },
     {
-      title: "INSTALLATION MACHINE VIRTUELLE",
+      title: t('proj_title_5'),
       description: t('proj_5_desc'),
       tags: ["SHELL"],
+      longDescription: t('proj_5_long')
     }
   ];
 
