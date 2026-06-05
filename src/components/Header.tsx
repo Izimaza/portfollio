@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       left: 0,
       width: '100%',
       zIndex: 1000,
-      padding: '1rem 2rem',
+      padding: '0.8rem clamp(1rem, 5vw, 2.5rem)',
       backgroundColor: 'rgba(5, 5, 5, 0.85)',
       backdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--accent-color)',
@@ -38,18 +38,19 @@ const Header: React.FC = () => {
         }}
         style={{ 
           fontWeight: 800, 
-          fontSize: '1rem', 
+          fontSize: 'clamp(0.85rem, 3vw, 1rem)', 
           color: 'var(--primary-color)', 
           letterSpacing: '2px',
           cursor: 'pointer',
-          zIndex: 1001
+          zIndex: 1001,
+          whiteSpace: 'nowrap'
         }}
       >
         ELLIOTT_TÂCHE
       </div>
 
       {/* Desktop Nav */}
-      <nav style={{ display: 'none', gap: '2rem' }} className="desktop-nav">
+      <nav style={{ display: 'none', gap: 'clamp(1rem, 2vw, 2.5rem)' }} className="desktop-nav">
         <style>{`
           @media (min-width: 1024px) {
             .desktop-nav { display: flex !important; }
