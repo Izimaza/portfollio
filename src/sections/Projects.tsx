@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
     {
       title: t('proj_title_5'),
       description: t('proj_5_desc'),
-      tags: ["SHELL"],
+      tags: ["ASSEMBLEUR"],
       longDescription: t('proj_5_long')
     }
   ];
