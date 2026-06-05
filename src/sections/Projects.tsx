@@ -47,6 +47,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="container">
       <h2 style={{ marginBottom: '3rem', alignSelf: 'flex-start' }}>{t('title_projects')}</h2>
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
